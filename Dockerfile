@@ -19,8 +19,8 @@ RUN apt-get update \
          libicu-dev \
          libgmp-dev \
          libmagickwand-dev \
+	 ffmpeg \
          openssh-server vim curl wget tcptraceroute \
-		 ffmpeg \
     && chmod 755 /bin/init_container.sh \
     && echo "root:Docker!" | chpasswd \
     && echo "cd /home" >> /etc/bash.bashrc \
