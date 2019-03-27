@@ -20,6 +20,7 @@ RUN apt-get update \
          libgmp-dev \
          libmagickwand-dev \
          openssh-server vim curl wget tcptraceroute \
+         ffmpeg \
     && chmod 755 /bin/init_container.sh \
     && echo "root:Docker!" | chpasswd \
     && echo "cd /home" >> /etc/bash.bashrc \
